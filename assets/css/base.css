@@ -1,0 +1,172 @@
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --primary-color:#ed4e2e;
+    --boder-color:#dbdbdb;
+    
+
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+/* bên này có thể dùng cho responsive */
+
+.grid{
+    width: 1750px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid_header{
+    width: 1750px;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+.grid__full_width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -9px;
+    margin-right: -9px;
+}
+/* test */
+.grid__column-2{
+    padding-left: 9px;
+    padding-right: 9px;
+    width: 16.6667%;
+    
+}
+.grid__column-10{
+    padding-left: 9px;
+    padding-right: 9px;
+    width: 83.3334%;
+}
+.grid__column-2-4{
+    width: 20%;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+
+/* button size */
+.btn{
+    min-width: 142px;
+    height: 40px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.btn--disabled{
+    cursor: default;
+    background-color: #666;
+    color: rgb(175, 166, 166);
+    
+}
+.btn.btn--size-s{
+    height: 37px;
+    line-height: 34px;
+    font-size: 1.4rem;
+    width: 100%;
+
+}
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+/* seclection */
+.select-input{
+    height: 34px;
+    padding: 19px 12px;
+    min-width: 200px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    position: relative;
+   
+}
+
+
+/* animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+
+    }
+}
+
+@keyframes gowth{
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
+
+
+    }
+}
+
+
+
+
+
+/* modal */
+
+.modal_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.3);
+}
+.modal_body{
+    --growth-from:0.8;
+    --growth-to:1;
+
+    border-radius: 5px;
+    position: relative;
+    
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    animation:gowth linear 0.4s;
+
+}
+/* phần css ẩn đăng kí đăng nhập */
+
+.hide{
+    display: none;
+}
+.show{
+    display: flex;
+   
+}
+.hide-user-info{
+    display: none;
+}
+.show-user-info{
+    display: block;
+}
+
