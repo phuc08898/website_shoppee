@@ -875,7 +875,7 @@ button.btn.home_filter-btn {
 }
 /* hiện thịt khi like  */
 .show_love{
-    display: inline-block;
+    display: inline-block; 
 }
 .show_not_love{
     display: none;
@@ -958,24 +958,44 @@ button.btn.home_filter-btn {
 }
     
 .home-product-item_like{
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     cursor: pointer;
 }
     
 .home-product-item_rating{
-}
+    font-size: 1rem;
+    color: rgb(204, 204, 203);
+    margin-left: auto;
+    margin-top: -1px;
     
+}
+.home-product-item_rating i {
+    
+}
+.home-product-item_star-gold {
+    color: var(--star-gold-color);
+}
+.home-product-item_sold{
+    font-size: 1.5rem;
+    color:  var(--text-color);
+    margin-left: 10px;
+}
 .home-product-item_origin{
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 15px 0 15px;
+    color: #595959;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
-    
-.home-product-item_favourite{
-}
-    
 .home-product-item-brand{
 }
-    
+.home-product-item_favourite{
+}
+
+
 .home-product-item_sale-off-percent{
-    }
+}
     
 .home-product-origin-name{
     }
