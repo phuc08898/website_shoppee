@@ -1,0 +1,225 @@
+/* phần css cảu ::-webkit-slider-runnable-track */
+.slide{
+    display: flex;
+    padding: 45px 45px 10px 45px;
+    border-bottom: 1px solid #ececec;
+}
+.slide_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px 6px;
+    max-height: 400px;
+
+}
+.slide_item-img{
+    border-radius: 3px;
+
+}
+.slide_item-img-wrapper{
+    margin: 5px 0 ;
+    border: 1px solid #cecaca;
+    border-radius: 3px;
+}
+.programme_bag{
+    display: flex;
+    justify-content: center;
+
+}
+.programme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: right linear 0.5s;
+    right: 0;
+    transition: transforn linear 0.2s;
+    will-change: transform;
+    padding: 10px 0 ;
+}
+.programme:hover{
+    transform: translateY(-5px);
+   
+    border-radius: 5px;
+}
+.programme__img{
+    width: 80px;
+}
+.programme-text{
+   
+    font-size: 1.6rem;
+    text-align: center;
+}
+.container_backgrowd_white{
+    background-color: var(--white-color);
+    border-radius: 2px;
+}
+
+.sale{
+    
+
+}
+.sale__baner{
+   display: flex;
+   justify-content: center;
+    
+}
+.sale__baner-img{
+    border-radius: 2px;
+   height: 90px;
+
+}
+.sale_container{
+    padding: 19px 30px;
+    display: flex;
+    
+    background-image: linear-gradient(0,#ff7f56,#ef4435);
+    
+}
+.sale_text_name{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+   
+}
+.sale_text-big{
+    font-size: 1.8rem;
+    color: var(--white-color);
+    font-weight: 600;
+
+}
+.sale-text-min{
+    font-size: 1.4rem;
+    color: var(--white-color);
+    padding: 0 50px 0 0 ;
+
+}
+.six_product{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2px;
+    
+    justify-content: space-evenly;
+   
+    padding-top: 5px;
+    padding-bottom: 15px;
+    background-image: linear-gradient(0deg, rgb(247 168 143), rgb(239 77 63))
+
+}
+.three_produc-item{
+    display: flex; 
+    position: relative;
+}
+.six_product-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3px;
+    border-right: 1px solid var(--primary-color);
+    padding: 15px 0;
+    background-color: white;
+    position: relative;
+    
+
+}
+.six_product-img{
+    width: 230px;
+
+}
+.six_product-text{
+    color: var( --text-color);
+    font-size: 1.8rem;
+    padding-top: 10px;
+
+}
+
+.six_product_saleoff{
+    background-color: rgb(255, 216, 64,0.94);
+    width: 50px;
+    padding: 10px 0;
+    height: 45px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+}
+.six_product_saleoff::before{
+    bottom: -8px;
+    content: "";
+    position: absolute;
+    right: 0;
+    border-width: 0px 25px 9px ; /* tren , trái phải , dưới  */
+    border-style: solid;
+    border-color: transparent  rgb(255, 216, 64,0.94) transparent;
+}
+
+.product_saleoff-label{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    
+
+}
+.product_saleoff-item{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.menu{
+   
+
+    border-radius: 3px;
+    margin-top: 27px;
+    padding: 20px 0 ;
+    background-color: #f5f5f5;
+}
+.menu-danhmuc{
+    padding-left: 23px;
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: var(--text-color);
+
+}
+.mew_coulum10{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #ebe9e9;
+    border-radius: 3px;
+    background-color: #fafafa;
+    padding-bottom: 14px;
+    
+
+}
+
+
+.menu_products{
+    display: flex;
+    flex-direction: column;
+    padding: 6px 0;
+    transition: transforn linear 0.2s;
+    justify-content: center;
+   
+    
+
+}
+.menu_products-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+
+}
+.menu_products:hover{
+    background-color: #f0eded;
+    transform: translateY(-3px);
+    box-shadow: 0 2px 5px rgb(214, 214, 214);
+    border-radius: 2px;
+}
+.menu_products-img{
+    width: 116px;
+    
+}
+.menu_products-name{
+    text-align: center;
+
+}
