@@ -250,7 +250,53 @@
     background-color: var(--primary-color);
     color: var(--white-color);
     border-radius: 5px;
+}
+.flash__sale-product{
+    display: flex;
+    justify-content: center;
 
+}
+.flash__sale-profuct-item{
+   
+    position: relative;
+}
+.flash__sale-profuct-img{
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+   
+   
+
+}
+.flash__sale-name-price{
+    margin-top: 12px;
+    text-align: center;
+    padding: 10px 0 ;
+
+}
+.flash__sale-name-product{
+    font-size:2rem;
+    text-align: center;
+    position: relative;
+    top: -14px;
+
+}
+.flash__sale-price{
+    margin-right: 10px;
+    font-size: 1.9rem;
+    padding: 0px 10px;
+    color: white;
+    border: 1px solid #8d4a4a;
+    border-radius: 10px;
+    background-image:linear-gradient(0deg, rgb(102 35 15), rgb(255 23 7));
 
 
 }
+.flash__sale-pric-sale{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+
+}
+
+
