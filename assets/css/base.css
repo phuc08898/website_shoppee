@@ -85,10 +85,16 @@ html{
     padding-right: 9px;
 }
 .grid__column-9-12{
-    width: 50%;
+    width: 75%;
     padding-left: 9px;
     padding-right: 9px;
 
+}
+.gird__column6-12{
+    padding-right: 9px;
+    padding-left: 9px;
+    width: 50%;
+   
 }
 
 /* button size */

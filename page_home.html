@@ -795,6 +795,71 @@
 
   </div>
 
+  <!-- phàn fasle sale  -->
+  <div class="grid">
+    <div class="flash__sale ">
+        <div class="flash__sale-name">
+            <img src="./assets/img/fl.png" alt="" class="flash__sale-img">
+            <div class="flash__sale-time">
+                <h1 id="countdown" class="h1-time"></h1>
+            </div>
+            
+            
+    
+        </div>
+        <div class="flash__sale-product">
+            <!-- sp1 -->
+            <div class="gird__column6-12">
+                <div class="flash__sale-profuct-item">
+                    <img src="" alt="" class="flash__sale-profuct-img">
+                    <span class="flash__sale-profuct-price"></span>
+                </div>
+            </div>
+              <!-- sp2 -->
+              <div class="gird__column6-12">
+                <div class="flash__sale-profuct-item">
+                    <img src="" alt="" class="flash__sale-profuct-img">
+                    <span class="flash__sale-profuct-price"></span>
+                </div>
+            </div>
+              <!-- sp3 -->
+              <div class="gird__column6-12">
+                <div class="flash__sale-profuct-item">
+                    <img src="" alt="" class="flash__sale-profuct-img">
+                    <span class="flash__sale-profuct-price"></span>
+                </div>
+            </div>
+              <!-- sp4 -->
+              <div class="gird__column6-12">
+                <div class="flash__sale-profuct-item">
+                    <img src="" alt="" class="flash__sale-profuct-img">
+                    <span class="flash__sale-profuct-price"></span>
+                </div>
+            </div>
+              <!-- sp5 -->
+              <div class="gird__column6-12">
+                <div class="flash__sale-profuct-item">
+                    <img src="" alt="" class="flash__sale-profuct-img">
+                    <span class="flash__sale-profuct-price"></span>
+                </div>
+            </div>
+              <!-- sp6 -->
+              <div class="gird__column6-12">
+                <div class="flash__sale-profuct-item">
+                    <img src="" alt="" class="flash__sale-profuct-img">
+                    <span class="flash__sale-profuct-price"></span>
+                </div>
+            </div>
+
+        </div>
+    
+      </div>
+  </div>
+
+
+
+ 
+
 
   </div>
 
@@ -804,4 +869,35 @@
 
    
 </body>
+
+<script>
+    // Đặt thời gian kết thúc của đồng hồ đếm ngược
+    var countdownTime = new Date();
+    countdownTime.setHours(18); // Giờ kết thúc (từ 0-23)
+    countdownTime.setMinutes(30); // Phút kết thúc (từ 0-59)
+    countdownTime.setSeconds(0); // Giây kết thúc (từ 0-59)
+
+    // Cập nhật đồng hồ đếm ngược mỗi giây
+    var countdown = setInterval(function() {
+        // Lấy thời gian hiện tại
+        var now = new Date().getTime();
+
+        // Tính thời gian còn lại
+        var timeRemaining = countdownTime.getTime() - now;
+
+        // Tính toán giờ, phút và giây còn lại
+        var hours = Math.floor(timeRemaining / (1000 * 60 * 60));
+        var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        // Hiển thị đồng hồ đếm ngược trong phần tử có id="countdown"
+        document.getElementById("countdown").innerHTML = hours + " giờ " + minutes + " phút " + seconds + " giây ";
+
+        // Kiểm tra nếu thời gian đã kết thúc
+        if (timeRemaining < 0) {
+            clearInterval(countdown);
+            document.getElementById("countdown").innerHTML = "Đã kết thúc";
+        }
+    }, 1000);
+</script>
 </html>

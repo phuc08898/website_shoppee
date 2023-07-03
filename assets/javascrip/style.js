@@ -108,3 +108,6 @@ function hideLike(){
     modalNolike.classList.add('show_love1')
 }
 btnLike.addEventListener('click',hideLike)
+
+// dodongf hồ dến ngược 
+

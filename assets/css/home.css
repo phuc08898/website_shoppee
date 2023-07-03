@@ -20,6 +20,8 @@
     margin: 5px 0 ;
     border: 1px solid #cecaca;
     border-radius: 3px;
+    max-width: 605px;
+    height: 185px;
 }
 .programme_bag{
     display: flex;
@@ -221,5 +223,34 @@
 }
 .menu_products-name{
     text-align: center;
+
+}
+.flash__sale{
+
+}
+.flash__sale-name{
+    display: flex;
+    align-items: center;
+    padding: 35px 25px ;
+    margin: 15px 0;
+    background-color:#fafafa;
+}
+.flash__sale-img{
+    width: 10%;
+    position: relative;
+}
+.h1-time{
+   color: #757373;
+}
+.flash__sale-time{
+    margin-left: 20px;
+}
+.flash__sale-time_off{
+    padding: 7px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 5px;
+
+
 
 }
